@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href=" farmer-login.css">
+
+    <!-- Bootstrap 5.0.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <main class="farmer-login-page">
+
+        <div class="login-wrapper">
+
+            <!-- LEFT SIDE -->
+            <section class="login-intro">
+
+                <a href="index.html" class="logo">
+                    <img src="images/Agrolink logo.png" alt="">
+                </a>
+
+                <div class="intro-content">
+
+                    <span class="intro-badge">
+                        <i class="fa-solid fa-seedling"></i>
+                        Farmer Portal
+                    </span>
+
+                    <h1>
+                        Welcome back,
+                        <span>Farmer.</span>
+                    </h1>
+
+                    <p>
+                        Sign in to your AgroLink farmer dashboard and
+                        manage your farm activities, produce, collections,
+                        sales and earnings from one place.
+                    </p>
+
+                    <div class="farmer-flow">
+
+                        <div class="flow-item">
+                            <div class="flow-icon">
+                                <i class="fa-solid fa-wheat-awn"></i>
+                            </div>
+
+                            <div>
+                                <strong>Your Produce</strong>
+                                <small>Manage what you supply</small>
+                            </div>
+                        </div>
+
+                        <div class="flow-line"></div>
+
+                        <div class="flow-item">
+                            <div class="flow-icon">
+                                <i class="fa-solid fa-truck"></i>
+                            </div>
+
+                            <div>
+                                <strong>Collection</strong>
+                                <small>Track your pickups</small>
+                            </div>
+                        </div>
+
+                        <div class="flow-line"></div>
+
+                        <div class="flow-item">
+                            <div class="flow-icon">
+                                <i class="fa-solid fa-chart-line"></i>
+                            </div>
+
+                            <div>
+                                <strong>Your Earnings</strong>
+                                <small>Monitor your sales</small>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="intro-bottom">
+                    <span>
+                        <i class="fa-solid fa-circle-check"></i>
+                        Your farm. Your produce. Your dashboard.
+                    </span>
+                </div>
+
+            </section>
+
+
+            <!-- RIGHT SIDE -->
+            <section class="login-form-section">
+
+                <div class="login-card">
+
+                    <div class="mobile-brand">
+                        <a href="index.html" class="brand">
+                            <span class="brand-mark">
+                                <i class="fa-solid fa-leaf"></i>
+                            </span>
+
+                            <span>Agro<span>Link</span></span>
+                        </a>
+                    </div>
+
+                    <div class="form-heading">
+
+                        <span class="form-icon">
+                            <i class="fa-solid fa-user"></i>
+                        </span>
+
+                        <div>
+                            <span class="form-label">
+                                FARMER LOGIN
+                            </span>
+
+                            <h2>
+                                Sign in to your account
+                            </h2>
+
+                            <p>
+                                Access your farmer dashboard.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- LOGIN FORM -->
+                    <form id="farmerLoginForm">
+
+                        <!-- EMAIL / PHONE -->
+                        <div class="input-group-custom">
+
+                            <label for="farmerIdentifier">
+                                Email or Phone Number
+                            </label>
+
+                            <div class="input-wrapper">
+
+                                <i class="fa-regular fa-user input-icon"></i>
+
+                                <input type="text" id="farmerIdentifier" placeholder="Enter your email or phone"
+                                    autocomplete="username" required>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- PASSWORD -->
+                        <div class="input-group-custom">
+
+                            <div class="password-label-row">
+
+                                <label for="farmerPassword">
+                                    Password
+                                </label>
+
+                                <a href="forgot-password.html" style="text-decoration: none;">
+                                    Forgot password?
+                                </a>
+
+                            </div>
+
+                            <div class="input-wrapper">
+
+                                <i class="fa-solid fa-lock input-icon"></i>
+
+                                <input type="password" id="farmerPassword" placeholder="Enter your password"
+                                    autocomplete="current-password" required>
+
+                                <button type="button" class="password-toggle" id="togglePassword"
+                                    aria-label="Show password">
+                                    <i class="fa-regular fa-eye"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Remember Me -->
+                        <div class="remember-row">
+                            <div class="remember-me">
+                                <input type="checkbox" id="remember">
+                                <label for="remember">Remember me</label>
+                            </div>
+                        </div>
+
+
+                        <!-- Login Button -->
+                        <button type="submit" class="farmer-login-btn">
+                            Login to Farmer Dashboard
+                            <i class="bi bi-arrow-right"></i>
+                        </button>
+
+
+                        <!-- Sign Up -->
+                        <div class="farmer-signup">
+                            <span>Don't have an account?</span>
+                            <a href="farmer-signup.html">Sign up as a farmer</a>
+                        </div>
+
+
+                        <div class="back-home-wrapper">
+                            <a href="index.html" class="back-home-btn">
+                                <i class="bi bi-arrow-left"></i>
+                                <span>Back to Home</span>
+                            </a>
+                        </div>
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- LOGIN JAVASCRIPT -->
+    <script>
+
+        const loginForm = document.getElementById("farmerLoginForm");
+
+        const passwordInput =
+            document.getElementById("farmerPassword");
+
+        const togglePassword =
+            document.getElementById("togglePassword");
+
+
+        /* SHOW / HIDE PASSWORD */
+
+        togglePassword.addEventListener("click", function () {
+
+            const icon = this.querySelector("i");
+
+            if (passwordInput.type === "password") {
+
+                passwordInput.type = "text";
+
+                icon.classList.remove("fa-eye");
+                icon.classList.add("fa-eye-slash");
+
+                this.setAttribute(
+                    "aria-label",
+                    "Hide password"
+                );
+
+            } else {
+
+                passwordInput.type = "password";
+
+                icon.classList.remove("fa-eye-slash");
+                icon.classList.add("fa-eye");
+
+                this.setAttribute(
+                    "aria-label",
+                    "Show password"
+                );
+            }
+
+        });
+
+
+        /* LOGIN */
+
+        loginForm.addEventListener("submit", function (event) {
+
+            event.preventDefault();
+
+            const identifier =
+                document.getElementById("farmerIdentifier").value.trim();
+
+            const password =
+                document.getElementById("farmerPassword").value.trim();
+
+
+            if (identifier === "" || password === "") {
+
+                alert("Please enter your login details.");
+
+                return;
+            }
+
+
+            /*
+                FRONT-END PROTOTYPE LOGIN
+
+                Later this can be connected to your
+                real database/backend.
+
+                For now, successful login takes the
+                farmer directly to the dashboard.
+            */
+
+            window.location.href = "farmer-dashboard.html";
+
+        });
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,1394 @@
+
+/* ================================
+   ROOT COLORS
+================================ */
+
+:root {
+    --agro-dark: #005C2B;
+    --agro-deep: #003F1E;
+    --agro-green: #67C93F;
+    --agro-light: #A5E879;
+
+    --white: #ffffff;
+    --text-dark: #163525;
+    --border-light: rgba(255, 255, 255, 0.15);
+}
+
+
+/* ================================
+   GENERAL
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Saira", sans-serif;
+    color: var(--text-dark);
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* ================================
+   TOP BAR
+================================ */
+
+.top-bar {
+    width: 100%;
+    background: var(--agro-dark);
+    color: var(--white);
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+}
+
+.welcome-text {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.welcome-text span {
+    color: var(--agro-light);
+    font-weight: 600;
+}
+
+.top-info {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.top-info > a {
+    color: white;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.top-info > a:hover {
+    color: var(--agro-light);
+}
+
+.top-info i {
+    margin-right: 5px;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    padding-left: 15px;
+    gap: 15px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: var(--agro-light);
+}
+
+
+/* ================================
+   NAVBAR
+================================ */
+
+.agro-navbar {
+    position: absolute;
+    top: 44px;
+    left: 5.5%;
+    right: 5.5%;
+    z-index: 1000;
+
+    background: white;
+
+    border-radius: 0 0 22px 22px;
+
+    padding: 0;
+
+    min-height: 82px;
+
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.08);
+}
+
+.nav-container {
+    padding-left: 0;
+    padding-right: 25px;
+}
+
+
+/* LOGO */
+
+.agro-logo {
+    display: flex;
+    align-items: center;
+
+    background: var(--agro-green);
+
+    min-height: 82px;
+
+    padding: 0 30px;
+
+    border-radius: 0 0 0 22px;
+}
+
+.logo-icon {
+    color: white;
+    font-size: 32px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    color: white;
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+.logo-text span {
+    color: var(--agro-deep);
+}
+
+
+/* NAV LINKS */
+
+.navbar-nav {
+    gap: 12px;
+}
+
+.nav-link {
+    color: var(--agro-dark) !important;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    padding: 31px 13px !important;
+
+    position: relative;
+}
+
+.nav-link:hover {
+    color: var(--agro-green) !important;
+}
+
+.nav-link.active {
+    color: var(--agro-green) !important;
+}
+
+.nav-link.active::after {
+    content: "";
+
+    position: absolute;
+
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    background: var(--agro-green);
+
+    bottom: 15px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+
+
+/* DROPDOWN */
+
+.dropdown-menu {
+    border: none;
+
+    border-radius: 12px;
+
+    padding: 10px;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.dropdown-item {
+    color: var(--agro-dark);
+
+    padding: 9px 14px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    font-weight: 500;
+}
+
+.dropdown-item:hover {
+    background: #effbe9;
+
+    color: var(--agro-dark);
+}
+
+
+/* NAV ACTIONS */
+
+.nav-actions {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+}
+
+.nav-icon {
+    color: var(--agro-dark);
+
+    font-size: 22px;
+
+    transition: 0.3s;
+}
+
+.nav-icon:hover {
+    color: var(--agro-green);
+}
+
+
+.talk-btn {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: var(--agro-green);
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    padding: 15px 23px;
+
+    border-radius: 12px;
+
+    transition: 0.3s;
+}
+
+.talk-btn:hover {
+    background: var(--agro-dark);
+
+    color: white;
+}
+
+
+.arrow-btn {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    background: var(--agro-green);
+
+    color: white;
+
+    border-radius: 12px;
+
+    font-size: 20px;
+
+    transition: 0.3s;
+}
+
+.arrow-btn:hover {
+    background: var(--agro-dark);
+
+    color: white;
+
+    transform: translateY(-2px);
+}
+
+.nav-logo img {
+    width: 190px;
+    height: auto;
+    display: block;
+    max-width: 139px;
+}
+
+.logo-image1 img{
+    width: 190px;
+    height: auto;
+    font-size: 30px;
+    font-weight: 800;
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   AGROLINK — HOW IT WORKS
+   Page-specific CSS
+   Uses your existing AgroLink root variables
+===================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Saira", sans-serif;
+    background: #f5f7f1;
+    color: #0b3d2e;
+}
+
+.how-page {
+    overflow: hidden;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.how-hero {
+    min-height: 570px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background:
+        linear-gradient(
+            135deg,
+            #073b2a 0%,
+            #0b4d37 48%,
+            #1f7a4d 100%
+        );
+    color: #fff;
+}
+
+.how-hero::after {
+    content: "";
+    position: absolute;
+    width: 430px;
+    height: 430px;
+    right: -170px;
+    top: -150px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.hero-content {
+    max-width: 760px;
+    padding: 90px 0;
+    position: relative;
+    margin-top: 90px !important;
+    z-index: 2;
+}
+
+.section-label {
+    display: inline-block;
+    margin-bottom: 22px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    color: #9be36b;
+}
+
+.hero-content h1 {
+    margin: 0;
+    font-size: clamp(3.2rem, 7vw, 6.5rem);
+    line-height: 0.98;
+    font-weight: 800;
+    letter-spacing: -2px;
+}
+
+.hero-content h1 span {
+    color: #9be36b;
+}
+
+.hero-content p {
+    max-width: 650px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 1.08rem;
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   SECTION HEADING
+===================================================== */
+
+.network-section {
+    padding: 110px 0 120px;
+    background: #f5f7f1;
+}
+
+.section-heading {
+    max-width: 700px;
+    margin: 0 auto 65px;
+}
+
+.section-heading > span {
+    color: #2e8b57;
+    font-size: 0.73rem;
+    font-weight: 700;
+    letter-spacing: 2.3px;
+}
+
+.section-heading h2 {
+    margin: 14px 0 17px;
+    color: #073b2a;
+    font-size: clamp(2.3rem, 5vw, 4rem);
+    line-height: 1.05;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.section-heading p {
+    margin: 0;
+    color: #607068;
+    line-height: 1.75;
+}
+
+
+/* =====================================================
+   NETWORK PATH
+===================================================== */
+
+.network-path {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 0;
+}
+
+.network-card {
+    width: 31%;
+    min-height: 330px;
+    padding: 32px;
+    position: relative;
+    border-radius: 22px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.network-card:hover {
+    transform: translateY(-7px);
+}
+
+.farmer-card {
+    background: linear-gradient(145deg, #ffffff, #edf8ef);
+    border: 1px solid #dcece1;
+    box-shadow: 0 20px 45px rgba(11, 61, 46, 0.08);
+}
+
+.agrolink-card {
+    color: #fff;
+    background: linear-gradient(
+        145deg,
+        #073b2a,
+        #126441 55%,
+        #2e8b57
+    );
+    box-shadow: 0 25px 50px rgba(7, 59, 42, 0.22);
+}
+
+.buyer-card {
+    background: linear-gradient(145deg, #ffffff, #f0f6ef);
+    border: 1px solid #dcece1;
+    box-shadow: 0 20px 45px rgba(11, 61, 46, 0.08);
+}
+
+.card-number {
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #2e8b57;
+}
+
+.agrolink-card .card-number {
+    color: #9be36b;
+}
+
+.network-card-content {
+    margin-top: 65px;
+}
+
+.network-card-content small {
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+    color: #6b7d74;
+}
+
+.agrolink-card .network-card-content small {
+    color: rgba(255, 255, 255, 0.62);
+}
+
+.network-card h3 {
+    margin: 8px 0 13px;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #073b2a;
+}
+
+.agrolink-card h3 {
+    color: #fff;
+}
+
+.network-card p {
+    max-width: 310px;
+    margin: 0;
+    font-size: 0.94rem;
+    line-height: 1.7;
+    color: #64736c;
+}
+
+.agrolink-card p {
+    color: rgba(255, 255, 255, 0.78);
+}
+
+.network-action {
+    margin-top: 27px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(7, 59, 42, 0.12);
+}
+
+.agrolink-card .network-action {
+    border-color: rgba(255, 255, 255, 0.16);
+}
+
+.network-action span {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #2e8b57;
+}
+
+.agrolink-card .network-action span {
+    color: #9be36b;
+}
+
+
+/* Connected line */
+
+.path-connector {
+    width: 42px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.path-connector::before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(
+        90deg,
+        #8bcf91,
+        #2e8b57
+    );
+}
+
+.path-connector span {
+    position: absolute;
+    right: -2px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #2e8b57;
+}
+
+
+/* =====================================================
+   FARMER JOURNEY
+===================================================== */
+
+.journey-section {
+    padding: 110px 0;
+    background: #fff;
+}
+
+.journey-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 50px;
+    margin-bottom: 70px;
+}
+
+.journey-header h2,
+.buyer-intro h2 {
+    margin: 12px 0 0;
+    color: #073b2a;
+    font-size: clamp(2.3rem, 4.5vw, 4rem);
+    line-height: 1.05;
+    font-weight: 800;
+}
+
+.journey-header > p {
+    max-width: 430px;
+    margin: 0;
+    color: #68766f;
+    line-height: 1.8;
+}
+
+.dark-label {
+    color: #2e8b57;
+}
+
+.steps-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.journey-step {
+    padding: 30px;
+    min-height: 270px;
+    border: 1px solid #e0eae3;
+    border-radius: 18px;
+    background: #f7faf7;
+}
+
+.step-top {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.step-top span {
+    width: 43px;
+    height: 43px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: #0b3d2e;
+    color: #fff;
+    font-size: 0.78rem;
+    font-weight: 700;
+}
+
+.step-top div {
+    flex: 1;
+    height: 1px;
+    background: #d9e5dd;
+}
+
+.journey-step h3 {
+    margin: 55px 0 13px;
+    color: #073b2a;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.journey-step p {
+    margin: 0;
+    color: #68766f;
+    line-height: 1.7;
+    font-size: 0.92rem;
+}
+
+
+/* =====================================================
+   OPERATIONS
+===================================================== */
+
+.operations-section {
+    padding: 110px 0 120px;
+    background: linear-gradient(
+        135deg,
+        #073b2a,
+        #0c5038 50%,
+        #185e3e
+    );
+}
+
+.light-heading {
+    margin-bottom: 60px;
+}
+
+.light-heading > span {
+    color: #9be36b;
+}
+
+.light-heading h2 {
+    color: #fff;
+}
+
+.light-heading p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.operations-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.operation-card {
+    min-height: 270px;
+    padding: 30px;
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.075);
+    backdrop-filter: blur(8px);
+}
+
+.operation-number {
+    color: #9be36b;
+    font-size: 0.78rem;
+    font-weight: 700;
+}
+
+.operation-card h3 {
+    margin: 70px 0 12px;
+    color: #fff;
+    font-size: 1.35rem;
+    font-weight: 700;
+}
+
+.operation-card p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.67);
+    line-height: 1.7;
+    font-size: 0.91rem;
+}
+
+
+/* =====================================================
+   BUYER SECTION
+===================================================== */
+
+.buyer-section {
+    padding: 120px 0;
+    background: #f5f7f1;
+}
+
+.buyer-layout {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 100px;
+    align-items: start;
+}
+
+.buyer-intro p {
+    max-width: 450px;
+    margin-top: 25px;
+    color: #68766f;
+    line-height: 1.8;
+}
+
+.buyer-process {
+    border-top: 1px solid #dce5df;
+}
+
+.buyer-row {
+    display: grid;
+    grid-template-columns: 55px 1fr;
+    gap: 20px;
+    padding: 27px 0;
+    border-bottom: 1px solid #dce5df;
+}
+
+.buyer-row > span {
+    font-size: 0.76rem;
+    color: #2e8b57;
+    font-weight: 800;
+}
+
+.buyer-row h3 {
+    margin: 0 0 7px;
+    color: #073b2a;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.buyer-row p {
+    margin: 0;
+    color: #68766f;
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   COMPLETE FLOW
+===================================================== */
+
+.complete-flow {
+    padding: 0 0 110px;
+    background: #f5f7f1;
+}
+
+.flow-box {
+    padding: 55px;
+    border-radius: 25px;
+    background: linear-gradient(
+        135deg,
+        #e8f5e9,
+        #f5f8f0
+    );
+    border: 1px solid #d8e9dc;
+}
+
+.flow-heading > span {
+    color: #2e8b57;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.flow-heading h2 {
+    margin: 12px 0 50px;
+    color: #073b2a;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    line-height: 1.08;
+    font-weight: 800;
+}
+
+.flow-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.flow-item {
+    min-width: 90px;
+    text-align: center;
+}
+
+.flow-item strong {
+    display: block;
+    color: #073b2a;
+    font-size: 0.72rem;
+    letter-spacing: 1px;
+}
+
+.flow-item span {
+    display: block;
+    margin-top: 5px;
+    color: #6b786f;
+    font-size: 0.72rem;
+}
+
+.flow-arrow {
+    width: 45px;
+    height: 1px;
+    flex-shrink: 0;
+    background: #8bb995;
+    position: relative;
+}
+
+.flow-arrow::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -3px;
+    width: 7px;
+    height: 7px;
+    border-top: 1px solid #2e8b57;
+    border-right: 1px solid #2e8b57;
+    transform: rotate(45deg);
+}
+
+
+/* =====================================================
+   CTA
+===================================================== */
+
+.how-cta {
+    padding: 0 0 100px;
+    background: #f5f7f1;
+}
+
+.cta-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 50px 55px;
+    border-radius: 24px;
+    background: #073b2a;
+}
+
+.cta-box span {
+    color: #9be36b;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.cta-box h2 {
+    margin: 10px 0 0;
+    color: #fff;
+    font-size: clamp(1.8rem, 3vw, 2.8rem);
+    font-weight: 800;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 22px;
+    border-radius: 8px;
+    background: #9be36b;
+    color: #073b2a;
+    text-decoration: none;
+    font-size: 0.88rem;
+    font-weight: 700;
+    white-space: nowrap;
+    transition: 0.25s ease;
+}
+
+.cta-button:hover {
+    background: #fff;
+    color: #073b2a;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1100px) {
+
+    .network-card {
+        padding: 25px;
+    }
+
+    .steps-wrapper,
+    .operations-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .buyer-layout {
+        gap: 55px;
+    }
+
+    .flow-line {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 25px;
+    }
+}
+
+
+@media (max-width: 850px) {
+
+    .how-hero {
+        min-height: 500px;
+    }
+
+    .hero-content {
+        padding: 70px 0;
+    }
+
+    .network-path {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+    }
+
+    .network-card {
+        width: 100%;
+        min-height: 280px;
+    }
+
+    .path-connector {
+        width: 100%;
+        height: 42px;
+        justify-content: center;
+    }
+
+    .path-connector::before {
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(
+            180deg,
+            #8bcf91,
+            #2e8b57
+        );
+    }
+
+    .path-connector span {
+        right: auto;
+        bottom: -2px;
+    }
+
+    .journey-header {
+        display: block;
+    }
+
+    .journey-header > p {
+        margin-top: 25px;
+    }
+
+    .buyer-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .flow-box {
+        padding: 35px 25px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .how-hero {
+        min-height: 470px;
+    }
+
+    .hero-content {
+        padding: 60px 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 3.25rem;
+        letter-spacing: -1.5px;
+    }
+
+    .hero-content p {
+        font-size: 0.95rem;
+    }
+
+    .network-section,
+    .journey-section,
+    .operations-section,
+    .buyer-section {
+        padding: 80px 0;
+    }
+
+    .section-heading {
+        margin-bottom: 45px;
+    }
+
+    .steps-wrapper,
+    .operations-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .journey-step,
+    .operation-card {
+        min-height: auto;
+    }
+
+    .journey-step h3 {
+        margin-top: 35px;
+    }
+
+    .operation-card h3 {
+        margin-top: 40px;
+    }
+
+    .flow-item {
+        min-width: 110px;
+    }
+
+    .flow-arrow {
+        display: none;
+    }
+
+    .cta-box {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 35px 28px;
+    }
+
+    .cta-button {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 400px) {
+
+    .hero-content h1 {
+        font-size: 2.75rem;
+    }
+
+    .network-card {
+        padding: 24px;
+    }
+
+    .buyer-row {
+        grid-template-columns: 40px 1fr;
+        gap: 12px;
+    }
+}
+
+
+
+
+
+
+/* =========================================
+   MAIN FOOTER
+=========================================  */
+
+.Agrolink-footer {
+    padding: 100px 0 0;
+
+    background: var(--agro-deep);
+
+    color: #ffffff;
+}
+
+
+/* Top */
+
+.footer-top {
+    padding-bottom: 80px;
+}
+
+
+/* Logo */
+
+.footer-logo {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 25px;
+
+    color: #ffffff;
+
+    font-size: 28px;
+
+    font-weight: 800;
+
+    text-decoration: none;
+
+    letter-spacing: -1px;
+}
+
+
+.logo-image img{
+    width: 190px;
+    height: auto;
+    font-size: 30px;
+    font-weight: 800;
+
+}
+
+
+/* Description */
+
+.footer-description {
+    max-width: 330px;
+
+    margin-bottom: 28px;
+
+    color: rgba(255, 255, 255, 0.55);
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+/* Social */
+
+.footer-socials {
+    display: flex;
+
+    gap: 10px;
+}
+
+
+.footer-socials a {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+
+.footer-socials a:hover {
+    background: var(--agro-green);
+
+    border-color: var(--agro-green);
+
+    transform: translateY(-3px);
+}
+
+
+/* Footer links */
+
+.footer-links h5 {
+    margin-bottom: 25px;
+
+    color: #ffffff;
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+
+.footer-links a {
+    display: block;
+
+    margin-bottom: 13px;
+
+    color: rgba(255, 255, 255, 0.52);
+
+    font-size: 13px;
+
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+
+.footer-links a:hover {
+    color: #9ddd6c;
+
+    transform: translateX(4px);
+}
+
+/* =========================================
+   FOOTER CONTACT STRIP
+========================================= */
+
+.footer-contact-strip {
+    padding: 28px 0;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.09);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+
+.footer-contact-item {
+    display: flex;
+    align-items: center;
+
+    gap: 13px;
+
+    color: rgba(255, 255, 255, 0.65);
+
+    font-size: 13px;
+}
+
+
+.footer-contact-item > div {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background: rgba(255, 255, 255, 0.06);
+
+    color: #9ddd6c;
+
+    font-size: 17px;
+}
+
+
+/* =========================================
+   FOOTER BOTTOM
+========================================= */
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 30px 0;
+}
+
+
+.footer-bottom p {
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.4);
+
+    font-size: 12px;
+}
+
+
+.footer-bottom-links {
+    display: flex;
+
+    gap: 22px;
+}
+
+
+.footer-bottom-links a {
+    color: rgba(255, 255, 255, 0.4);
+
+    font-size: 12px;
+
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+}
+
+
+.footer-bottom-links a:hover {
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

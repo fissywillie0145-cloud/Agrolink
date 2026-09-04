@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buyer-dashboard</title>
+
+        <!-- Saira Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Bootstrap 5.0.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Saira:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="buyer-dashboard.css">
+</head>
+<body>
+  
+
+<div class="dashboard-wrapper">
+
+
+    <!-- ==================================================
+         SIDEBAR
+    =================================================== -->
+
+    <aside class="dashboard-sidebar" id="sidebar">
+
+        <!-- Placeholder Logo -->
+        <div class="sidebar-logo">
+            <div class="nav-logo">
+                    <div class="logo-image1">
+                    <img src="images/logo2.png" alt="AgroLink Logo" >
+                    </div>
+                </div>
+        </div>
+
+
+        <!-- Main Navigation -->
+        <nav class="sidebar-navigation">
+
+            <p class="menu-title">MAIN MENU</p>
+
+
+            <a href="buyer-dashboard.html"
+               class="sidebar-link active">
+
+                <i class="bi bi-grid-1x2-fill"></i>
+
+                <span>Dashboard</span>
+
+            </a>
+
+
+            <a href="buyer-section.html?section=browse-products"
+               class="sidebar-link">
+
+                <i class="bi bi-box-seam"></i>
+
+                <span>Browse Products</span>
+
+            </a>
+
+
+            <a href="buyer-section.html?section=categories"
+               class="sidebar-link">
+
+                <i class="bi bi-grid"></i>
+
+                <span>Categories</span>
+
+            </a>
+
+
+            <a href="buyer-section.html?section=my-orders"
+               class="sidebar-link">
+
+                <i class="bi bi-bag-check"></i>
+
+                <span>My Orders</span>
+
+            </a>
+
+
+            <a href="buyer-section.html?section=bulk-orders"
+               class="sidebar-link">
+
+                <i class="bi bi-boxes"></i>
+
+                <span>Bulk Orders</span>
+
+                <span class="new-badge">New</span>
+
+            </a>
+
+
+            <a href="buyer-section.html?section=quotes"
+               class="sidebar-link">
+
+                <i class="bi bi-receipt"></i>
+
+                <span>Quotes</span>
+
+            </a>
+
+
+            <a href="buyer-section.html?section=deliveries"
+               class="sidebar-link">
+
+                <i class="bi bi-truck"></i>
+
+                <span>Deliveries & Tracking</span>
+
+            </a>
+
+
+            <a href="buyer-section.html?section=invoices"
+               class="sidebar-link">
+
+                <i class="bi bi-file-earmark-text"></i>
+
+                <span>Invoices & Payments</span>
+
+            </a>
+
+
+            <a href="buyer-section.html?section=favorites"
+               class="sidebar-link">
+
+                <i class="bi bi-heart"></i>
+
+                <span>Favorites</span>
+
+            </a>
+
+
+            <p class="menu-title second-title">ACCOUNT</p>
+
+
+            <a href="buyer-section.html?section=suppliers"
+               class="sidebar-link">
+
+                <i class="bi bi-people"></i>
+
+                <span>Saved Suppliers</span>
+
+            </a>
+
+
+            <a href="buyer-section.html?section=reports"
+               class="sidebar-link">
+
+                <i class="bi bi-bar-chart"></i>
+
+                <span>Reports & Analytics</span>
+
+            </a>
+
+
+            <a href="buyer-section.html?section=messages"
+               class="sidebar-link">
+
+                <i class="bi bi-chat-left-text"></i>
+
+                <span>Messages</span>
+
+                <span class="notification-number">3</span>
+
+            </a>
+
+
+            <a href="buyer-section.html?section=notifications"
+               class="sidebar-link">
+
+                <i class="bi bi-bell"></i>
+
+                <span>Notifications</span>
+
+                <span class="notification-number">6</span>
+
+            </a>
+
+
+            <a href="buyer-section.html?section=settings"
+               class="sidebar-link">
+
+                <i class="bi bi-gear"></i>
+
+                <span>Settings</span>
+
+            </a>
+
+
+            <a href="buyer-section.html?section=support"
+               class="sidebar-link">
+
+                <i class="bi bi-question-circle"></i>
+
+                <span>Help & Support</span>
+
+            </a>
+
+        </nav>
+
+
+        <!-- Buyer Account -->
+        <div class="sidebar-account">
+
+            <div class="account-avatar">
+                TA
+            </div>
+
+            <div class="account-info">
+
+                <strong>GreenMart Ventures</strong>
+
+                <small>Buyer Account</small>
+
+            </div>
+
+            <i class="bi bi-chevron-down account-arrow"></i>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- ==================================================
+         MAIN CONTENT
+    =================================================== -->
+
+    <main class="dashboard-main">
+
+
+        <!-- TOP BAR -->
+
+        <header class="dashboard-topbar">
+
+            <button
+                class="mobile-menu"
+                id="mobileMenu">
+
+                <i class="bi bi-list"></i>
+
+            </button>
+
+
+            <div class="welcome-area">
+
+                <h1>
+                    Welcome back, Tunde 👋
+                </h1>
+
+                <p>
+                    Here's what's happening with your purchases today.
+                </p>
+
+            </div>
+
+
+            <div class="topbar-actions">
+
+
+                <!-- Search -->
+
+                <div class="dashboard-search">
+
+                    <i class="bi bi-search"></i>
+
+                    <input
+                        type="text"
+                        placeholder="Search for products, categories...">
+
+                </div>
+
+
+                <!-- Cart -->
+
+                <a
+                    href="buyer-section.html?section=cart"
+                    class="topbar-icon">
+
+                    <i class="bi bi-cart3"></i>
+
+                    <span>2</span>
+
+                </a>
+
+
+                <!-- Notification -->
+
+                <a
+                    href="buyer-section.html?section=notifications"
+                    class="topbar-icon">
+
+                    <i class="bi bi-bell"></i>
+
+                    <span>3</span>
+
+                </a>
+
+
+                <!-- Balance -->
+
+                <div class="account-balance">
+
+                    <small>Account Balance</small>
+
+                    <strong>
+                        ₦2,450,000
+                    </strong>
+
+                </div>
+
+
+                <!-- Add Funds -->
+
+                <button class="add-funds-btn">
+
+                    <i class="bi bi-plus"></i>
+
+                    Add Funds
+
+                </button>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- DASHBOARD CONTENT -->
+
+        <section class="dashboard-content">
+
+
+            <!-- ==================================================
+                 STAT CARDS
+            =================================================== -->
+
+            <div class="stats-grid">
+
+
+                <!-- Total Spent -->
+
+                <div class="stat-card">
+
+                    <div class="stat-card-top">
+
+                        <span>Total Spent</span>
+
+                        <div class="stat-icon green">
+                            <i class="bi bi-wallet2"></i>
+                        </div>
+
+                    </div>
+
+                    <h2>₦12,750,000</h2>
+
+                    <small class="positive">
+                        <i class="bi bi-arrow-up"></i>
+                        18.6% vs last month
+                    </small>
+
+                </div>
+
+
+                <!-- Active Orders -->
+
+                <div class="stat-card">
+
+                    <div class="stat-card-top">
+
+                        <span>Active Orders</span>
+
+                        <div class="stat-icon blue">
+                            <i class="bi bi-bag"></i>
+                        </div>
+
+                    </div>
+
+                    <h2>24</h2>
+
+                    <small>
+                        8 in progress
+                    </small>
+
+                </div>
+
+
+                <!-- Pending Deliveries -->
+
+                <div class="stat-card">
+
+                    <div class="stat-card-top">
+
+                        <span>Pending Deliveries</span>
+
+                        <div class="stat-icon orange">
+                            <i class="bi bi-truck"></i>
+                        </div>
+
+                    </div>
+
+                    <h2>7</h2>
+
+                    <small>
+                        Estimated this week
+                    </small>
+
+                </div>
+
+
+                <!-- Completed Orders -->
+
+                <div class="stat-card">
+
+                    <div class="stat-card-top">
+
+                        <span>Completed Orders</span>
+
+                        <div class="stat-icon success">
+                            <i class="bi bi-check-circle"></i>
+                        </div>
+
+                    </div>
+
+                    <h2>156</h2>
+
+                    <small class="positive">
+                        <i class="bi bi-arrow-up"></i>
+                        22.4% vs last month
+                    </small>
+
+                </div>
+
+
+                <!-- Favorites -->
+
+                <div class="stat-card">
+
+                    <div class="stat-card-top">
+
+                        <span>Favorite Products</span>
+
+                        <div class="stat-icon purple">
+                            <i class="bi bi-heart-fill"></i>
+                        </div>
+
+                    </div>
+
+                    <h2>32</h2>
+
+                    <small>
+                        Across 12 categories
+                    </small>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ==================================================
+                 ANALYTICS ROW
+            =================================================== -->
+
+            <div class="analytics-grid">
+
+
+                <!-- ORDER OVERVIEW -->
+
+                <div class="dashboard-card order-overview">
+
+                    <div class="card-heading">
+
+                        <div>
+                            <h3>Order Overview</h3>
+                            <span>Your purchasing activity</span>
+                        </div>
+
+                        <select class="period-select">
+                            <option>This Year</option>
+                            <option>This Month</option>
+                            <option>Last 6 Months</option>
+                        </select>
+
+                    </div>
+
+
+                    <div class="chart-area">
+
+                        <div class="chart-y-axis">
+
+                            <span>₦5M</span>
+                            <span>₦4M</span>
+                            <span>₦3M</span>
+                            <span>₦2M</span>
+                            <span>₦1M</span>
+                            <span>₦0</span>
+
+                        </div>
+
+
+                        <div class="chart">
+
+                            <div class="chart-grid-lines"></div>
+
+                            <svg
+                                viewBox="0 0 700 260"
+                                preserveAspectRatio="none">
+
+                                <defs>
+
+                                    <linearGradient
+                                        id="chartGradient"
+                                        x1="0"
+                                        x2="0"
+                                        y1="0"
+                                        y2="1">
+
+                                        <stop
+                                            offset="0%"
+                                            stop-opacity=".28"/>
+
+                                        <stop
+                                            offset="100%"
+                                            stop-opacity="0"/>
+
+                                    </linearGradient>
+
+                                </defs>
+
+
+                                <path
+                                    class="chart-fill"
+                                    d="M0 210
+                                       C50 200 70 170 110 180
+                                       S170 145 215 165
+                                       S280 120 320 145
+                                       S380 115 425 130
+                                       S485 75 530 95
+                                       S590 55 630 70
+                                       S675 30 700 45
+                                       L700 260
+                                       L0 260 Z"/>
+
+
+                                <path
+                                    class="chart-line"
+                                    d="M0 210
+                                       C50 200 70 170 110 180
+                                       S170 145 215 165
+                                       S280 120 320 145
+                                       S380 115 425 130
+                                       S485 75 530 95
+                                       S590 55 630 70
+                                       S675 30 700 45"/>
+
+                            </svg>
+
+
+                            <div class="chart-months">
+
+                                <span>Jan</span>
+                                <span>Feb</span>
+                                <span>Mar</span>
+                                <span>Apr</span>
+                                <span>May</span>
+                                <span>Jun</span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="chart-summary">
+
+                        <div>
+                            <small>Total Orders</small>
+                            <strong>₦12,750,000</strong>
+                        </div>
+
+                        <div>
+                            <small>This year</small>
+                            <strong class="green-text">+22.4%</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- TOP CATEGORIES -->
+
+                <div class="dashboard-card categories-card">
+
+                    <div class="card-heading">
+
+                        <div>
+
+                            <h3>Top Categories</h3>
+
+                            <span>Most purchased categories</span>
+
+                        </div>
+
+                        <a href="buyer-section.html?section=categories">
+                            View all
+                        </a>
+
+                    </div>
+
+
+                    <div class="donut-area">
+
+                        <div class="donut-chart">
+
+                            <div class="donut-center">
+
+                                <strong>₦12.75M</strong>
+
+                                <span>Total</span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="category-list">
+
+                            <div class="category-item">
+                                <span class="dot grains"></span>
+                                <span>Grains & Cereals</span>
+                                <strong>₦3,250,000</strong>
+                            </div>
+
+                            <div class="category-item">
+                                <span class="dot tubers"></span>
+                                <span>Tubers</span>
+                                <strong>₦2,480,000</strong>
+                            </div>
+
+                            <div class="category-item">
+                                <span class="dot vegetables"></span>
+                                <span>Vegetables</span>
+                                <strong>₦2,050,000</strong>
+                            </div>
+
+                            <div class="category-item">
+                                <span class="dot legumes"></span>
+                                <span>Legumes</span>
+                                <strong>₦1,850,000</strong>
+                            </div>
+
+                            <div class="category-item">
+                                <span class="dot fruits"></span>
+                                <span>Fruits</span>
+                                <strong>₦1,620,000</strong>
+                            </div>
+
+                            <div class="category-item">
+                                <span class="dot others"></span>
+                                <span>Others</span>
+                                <strong>₦1,500,000</strong>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- RECENT ORDERS -->
+
+                <div class="dashboard-card recent-orders">
+
+                    <div class="card-heading">
+
+                        <div>
+
+                            <h3>Recent Orders</h3>
+
+                            <span>Your latest purchases</span>
+
+                        </div>
+
+                        <a href="buyer-section.html?section=my-orders">
+                            View all
+                        </a>
+
+                    </div>
+
+
+                    <div class="orders-table">
+
+                        <div class="order-row heading-row">
+
+                            <span>Product</span>
+                            <span>Order ID</span>
+                            <span>Date</span>
+                            <span>Status</span>
+
+                        </div>
+
+
+                        <div class="order-row">
+
+                            <div class="product-name">
+
+                                <div class="product-placeholder rice">
+                                    R
+                                </div>
+
+                                <span>Premium Rice</span>
+
+                            </div>
+
+                            <span>ORD-2024-0568</span>
+
+                            <span>Mar 19, 2024</span>
+
+                            <span class="status delivered">
+                                Delivered
+                            </span>
+
+                        </div>
+
+
+                        <div class="order-row">
+
+                            <div class="product-name">
+
+                                <div class="product-placeholder wheat">
+                                    W
+                                </div>
+
+                                <span>White Beans</span>
+
+                            </div>
+
+                            <span>ORD-2024-0567</span>
+
+                            <span>Mar 18, 2024</span>
+
+                            <span class="status progress">
+                                In Progress
+                            </span>
+
+                        </div>
+
+
+                        <div class="order-row">
+
+                            <div class="product-name">
+
+                                <div class="product-placeholder tomato">
+                                    T
+                                </div>
+
+                                <span>Fresh Tomatoes</span>
+
+                            </div>
+
+                            <span>ORD-2024-0566</span>
+
+                            <span>Mar 18, 2024</span>
+
+                            <span class="status pending">
+                                Pending
+                            </span>
+
+                        </div>
+
+
+                        <div class="order-row">
+
+                            <div class="product-name">
+
+                                <div class="product-placeholder onion">
+                                    O
+                                </div>
+
+                                <span>Red Onions</span>
+
+                            </div>
+
+                            <span>ORD-2024-0565</span>
+
+                            <span>Mar 17, 2024</span>
+
+                            <span class="status delivered">
+                                Delivered
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ==================================================
+                 BULK ORDER BANNER
+            =================================================== -->
+
+            <div class="bulk-banner">
+
+                <div class="warehouse-image">
+
+                    <div class="warehouse-placeholder">
+                        <i class="bi bi-buildings"></i>
+                    </div>
+
+                </div>
+
+
+                <div class="bulk-content">
+
+                    <span>Need a large quantity?</span>
+
+                    <h3>
+                        Request a Bulk Quote
+                    </h3>
+
+                    <p>
+                        Get the best prices for your wholesale orders.
+                    </p>
+
+                    <a href="buyer-section.html?section=bulk-orders"
+                       class="quote-btn">
+
+                        Request Quote
+
+                        <i class="bi bi-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+
+                <div class="bulk-features">
+
+                    <div>
+                        <i class="bi bi-tags"></i>
+                        <strong>Better Prices</strong>
+                        <small>For bulk orders</small>
+                    </div>
+
+                    <div>
+                        <i class="bi bi-truck"></i>
+                        <strong>Priority Delivery</strong>
+                        <small>Faster processing</small>
+                    </div>
+
+                    <div>
+                        <i class="bi bi-shield-check"></i>
+                        <strong>Flexible Payment</strong>
+                        <small>Convenient options</small>
+                    </div>
+
+                    <div>
+                        <i class="bi bi-headset"></i>
+                        <strong>Dedicated Support</strong>
+                        <small>Get assistance</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ==================================================
+                 BOTTOM GRID
+            =================================================== -->
+
+            <div class="bottom-grid">
+
+
+                <!-- FEATURED PRODUCTS -->
+
+                <div class="dashboard-card featured-products">
+
+                    <div class="card-heading">
+
+                        <div>
+
+                            <h3>Featured Products</h3>
+
+                            <span>Popular products in our warehouse</span>
+
+                        </div>
+
+                        <a href="buyer-section.html?section=browse-products">
+                            View all
+                        </a>
+
+                    </div>
+
+
+                    <div class="product-grid">
+
+
+                        <div class="product-card">
+
+                            <div class="product-image rice-product">
+                                Rice
+                            </div>
+
+                            <h4>Premium Rice</h4>
+
+                            <strong>₦38,000</strong>
+
+                            <small>per 50kg bag</small>
+
+                            <span class="stock">
+                                In Stock
+                            </span>
+
+                        </div>
+
+
+                        <div class="product-card">
+
+                            <div class="product-image beans-product">
+                                Beans
+                            </div>
+
+                            <h4>White Beans</h4>
+
+                            <strong>₦42,000</strong>
+
+                            <small>per 50kg bag</small>
+
+                            <span class="stock">
+                                In Stock
+                            </span>
+
+                        </div>
+
+
+                        <div class="product-card">
+
+                            <div class="product-image tomato-product">
+                                Tomato
+                            </div>
+
+                            <h4>Fresh Tomatoes</h4>
+
+                            <strong>₦18,000</strong>
+
+                            <small>per basket</small>
+
+                            <span class="stock">
+                                In Stock
+                            </span>
+
+                        </div>
+
+
+                        <div class="product-card">
+
+                            <div class="product-image onion-product">
+                                Onion
+                            </div>
+
+                            <h4>Red Onions</h4>
+
+                            <strong>₦25,000</strong>
+
+                            <small>per bag</small>
+
+                            <span class="stock">
+                                In Stock
+                            </span>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- DELIVERY OVERVIEW -->
+
+                <div class="dashboard-card delivery-card">
+
+                    <div class="card-heading">
+
+                        <div>
+
+                            <h3>Deliveries Overview</h3>
+
+                            <span>Track your shipments</span>
+
+                        </div>
+
+                        <a href="buyer-section.html?section=deliveries">
+                            View all
+                        </a>
+
+                    </div>
+
+
+                    <div class="delivery-list">
+
+
+                        <div class="delivery-item">
+
+                            <div class="delivery-id">
+
+                                <strong>
+                                    DEL-2024-006
+                                </strong>
+
+                                <small>
+                                    Premium Rice • 50 bags
+                                </small>
+
+                            </div>
+
+                            <div class="delivery-progress">
+
+                                <span>On the way</span>
+
+                                <div>
+                                    <span style="width:75%;"></span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="delivery-item">
+
+                            <div class="delivery-id">
+
+                                <strong>
+                                    DEL-2024-005
+                                </strong>
+
+                                <small>
+                                    White Beans • 30 bags
+                                </small>
+
+                            </div>
+
+                            <div class="delivery-progress">
+
+                                <span>Out for delivery</span>
+
+                                <div>
+                                    <span style="width:90%;"></span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="delivery-item">
+
+                            <div class="delivery-id">
+
+                                <strong>
+                                    DEL-2024-004
+                                </strong>
+
+                                <small>
+                                    Fresh Tomatoes • 20 baskets
+                                </small>
+
+                            </div>
+
+                            <div class="delivery-progress">
+
+                                <span>Delivered</span>
+
+                                <div>
+                                    <span style="width:100%;"></span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PAYMENT SUMMARY -->
+
+                <div class="dashboard-card payment-card">
+
+                    <div class="card-heading">
+
+                        <div>
+
+                            <h3>Payment Summary</h3>
+
+                            <span>Your account activity</span>
+
+                        </div>
+
+                        <a href="buyer-section.html?section=invoices">
+                            View all
+                        </a>
+
+                    </div>
+
+
+                    <div class="payment-chart">
+
+                        <div class="payment-donut">
+
+                            <div>
+
+                                <strong>₦2.45M</strong>
+
+                                <small>Balance</small>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="payment-legend">
+
+                        <div>
+                            <span class="legend-paid"></span>
+                            Paid
+                            <strong>₦8.2M</strong>
+                        </div>
+
+                        <div>
+                            <span class="legend-pending"></span>
+                            Outstanding
+                            <strong>₦1.4M</strong>
+                        </div>
+
+                        <div>
+                            <span class="legend-wallet"></span>
+                            Wallet
+                            <strong>₦2.45M</strong>
+                        </div>
+
+                    </div>
+
+
+                    <a
+                        href="buyer-section.html?section=payments"
+                        class="make-payment">
+
+                        Make Payment
+
+                        <i class="bi bi-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="buyer-dashboard.js"></script>
+
+
+
+
+
+     <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js">
+    </script>
+</body>
+</html>

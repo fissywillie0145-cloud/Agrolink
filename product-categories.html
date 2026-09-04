@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Categories</title>
+
+       <!-- Saira Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Bootstrap 5.0.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Saira:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="product-categories.css">
+</head>
+<body>
+    
+    
+    <!-- ================= TOP BAR ================= -->
+    <div class="top-bar">
+        <div class="container-fluid px-lg-5">
+            <div class="row align-items-center">
+
+                <div class="col-lg-7">
+                    <p class="welcome-text mb-0">
+                        Welcome to <span>AgroLink</span>, Connecting Farms to Business
+                    </p>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="top-info justify-content-lg-end">
+
+                        <a href="mailto:hello@agrolink.ng">
+                            <i class="bi bi-envelope"></i>
+                            hello@agrolink.ng
+                        </a>
+
+                        <a href="tel:+234727283572">
+                            <i class="bi bi-telephone"></i>
+                            +234 72 728 3572
+                        </a>
+
+                        <div class="social-links">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+     
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg agro-navbar ">
+
+        <div class="container-fluid nav-container ">
+
+            <!-- LOGO -->
+            <a class="navbar-brand agro-logo" href="index.html">
+                <div class="nav-logo">
+                    <div class="logo-image1">
+                    <img src="images/logo2.png" alt="AgroLink Logo" >
+                    </div>
+                </div>
+            </a>
+
+
+            <!-- MOBILE BUTTON -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <!-- NAV LINKS -->
+            <div class="collapse navbar-collapse" id="mainNavbar">
+
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            HOME
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="become-a-partner.html" role="button" data-bs-toggle="dropdown">
+                            FARMERS
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="Become-a-Partner.html">
+                                    Become a Partner
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="Sell-With-AgroLink.html">
+                                    Sell With AgroLink
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="farmer-login.html">
+                                    Farmer Dashboard
+                                </a>
+                            </li>
+                     
+                             <li>
+                                <a class="dropdown-item" href="buyer-login.html">
+                                    Buyer Dashboard
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="available-products.html" role="button" data-bs-toggle="dropdown">
+                            MARKETPLACE
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="available-products.html">
+                                    Available Products
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="wholesale.html">
+                                    Wholesale
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="product-categories.html">
+                                    Product Categories
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="how-it-works.html">
+                            HOW IT WORKS
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">
+                            ABOUT US
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            CONTACT
+                        </a>
+                    </li>
+
+                </ul>
+
+
+                <!-- RIGHT SIDE -->
+                <div class="nav-actions">
+
+
+                    <a href="available-products.html" class="nav-icon cart-icon">
+                        <i class="bi bi-cart3"></i>
+                    </a>
+
+                    <a href="become-a-partner.html" class="talk-btn">
+                        JOIN AGROLINK
+                    </a>
+
+                    <a href="product-categories.html" class="arrow-btn">
+                        <i class="bi bi-search"></i>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+
+    
+
+
+
+<!-- ==========================================
+     AGROLINK PRODUCT CATEGORIES PAGE
+========================================== -->
+
+<section class="agro-category-page">
+
+    <div class="container">
+
+        <!-- ======================================
+             PAGE INTRO
+        ======================================= -->
+
+        <div class="category-intro">
+
+            <div class="category-intro-text mt-5">
+
+                <span class="category-kicker">
+                    AGROLINK WAREHOUSE
+                </span>
+
+                <h1>
+                    Explore our
+                    <span>produce categories.</span>
+                </h1>
+
+                <p>
+                    Browse the agricultural products available
+                    through AgroLink and find the category that
+                    matches your business needs.
+                </p>
+
+            </div>
+
+
+        </div> 
+
+
+
+        <!-- ======================================
+             FEATURED CATEGORY
+        ======================================= -->
+
+        <div class="featured-category">
+
+            <div class="featured-image">
+
+                <img
+                    src="images/fresh-vegetables.jpg"
+                    alt="Fresh vegetables in AgroLink warehouse"
+                >
+
+                <div class="featured-image-overlay"></div>
+
+                <div class="featured-label">
+                    FEATURED CATEGORY
+                </div>
+
+            </div>
+
+
+            <div class="featured-content">
+
+                <span>
+                    01 / VEGETABLES
+                </span>
+
+                <h2>
+                    Fresh vegetables,
+                    ready for wholesale.
+                </h2>
+
+                <p>
+                    Source fresh vegetables collected from
+                    AgroLink partner farms and made available
+                    through our warehouse network.
+                </p>
+
+
+                <div class="category-items">
+
+                    <div>
+                        <i class="bi bi-check2"></i>
+                        Tomatoes
+                    </div>
+
+                    <div>
+                        <i class="bi bi-check2"></i>
+                        Peppers
+                    </div>
+
+                    <div>
+                        <i class="bi bi-check2"></i>
+                        Cucumbers
+                    </div>
+
+                    <div>
+                        <i class="bi bi-check2"></i>
+                        Leafy vegetables
+                    </div>
+
+                </div>
+
+
+                <a
+                    href="available-products.html?category=vegetables"
+                    class="category-link"
+                >
+
+                    Browse vegetables
+
+                    <span>
+                        <i class="bi bi-arrow-up-right"></i>
+                    </span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ======================================
+             CATEGORY HEADING
+        ======================================= -->
+
+        <div class="categories-heading">
+
+            <div>
+
+                <span>
+                    EXPLORE THE WAREHOUSE
+                </span>
+
+                <h2>
+                    What are you looking for?
+                </h2>
+
+            </div>
+
+            <p>
+                Choose a category to explore produce
+                currently supplied through AgroLink.
+            </p>
+
+        </div>
+
+
+
+        <!-- ======================================
+             CATEGORY GRID
+        ======================================= -->
+
+        <div class="row g-4">
+
+
+            <!-- FRUITS -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <a
+                    href="available-products.html?category=fruits"
+                    class="category-card"
+                >
+
+                    <div class="category-card-image">
+
+                        <img
+                            src="images/fruits.jpg"
+                            alt="Fresh agricultural fruits"
+                        >
+
+                        <span class="category-number">
+                            02
+                        </span>
+
+                    </div>
+
+
+                    <div class="category-card-content">
+
+                        <div>
+
+                            <small>
+                                FRESH PRODUCE
+                            </small>
+
+                            <h3>
+                                Fruits
+                            </h3>
+
+                        </div>
+
+                        <span class="category-arrow">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+
+            <!-- TUBERS -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <a
+                    href="available-products.html?category=tubers"
+                    class="category-card"
+                >
+
+                    <div class="category-card-image">
+
+                        <img
+                            src="images/tubers.jpg"
+                            alt="Yam and other agricultural tubers"
+                        >
+
+                        <span class="category-number">
+                            03
+                        </span>
+
+                    </div>
+
+
+                    <div class="category-card-content">
+
+                        <div>
+
+                            <small>
+                                ROOT CROPS
+                            </small>
+
+                            <h3>
+                                Tubers & Roots
+                            </h3>
+
+                        </div>
+
+                        <span class="category-arrow">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+
+            <!-- GRAINS -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <a
+                    href="available-products.html?category=grains"
+                    class="category-card"
+                >
+
+                    <div class="category-card-image">
+
+                        <img
+                            src="images/grains.jpg"
+                            alt="Agricultural grains"
+                        >
+
+                        <span class="category-number">
+                            04
+                        </span>
+
+                    </div>
+
+
+                    <div class="category-card-content">
+
+                        <div>
+
+                            <small>
+                                STORED PRODUCE
+                            </small>
+
+                            <h3>
+                                Grains
+                            </h3>
+
+                        </div>
+
+                        <span class="category-arrow">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+
+            <!-- LEGUMES -->
+
+            <div class="col-lg-6 col-md-6">
+
+                <a
+                    href="available-products.html?category=legumes"
+                    class="category-card category-card-wide"
+                >
+
+                    <div class="category-card-image">
+
+                        <img
+                            src="images/legumes.jpg"
+                            alt="Beans and legumes"
+                        >
+
+                        <span class="category-number">
+                            05
+                        </span>
+
+                    </div>
+
+
+                    <div class="category-card-content">
+
+                        <div>
+
+                            <small>
+                                FARM SUPPLY
+                            </small>
+
+                            <h3>
+                                Legumes & Beans
+                            </h3>
+
+                        </div>
+
+                        <span class="category-arrow">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+
+            <!-- SPICES -->
+
+            <div class="col-lg-6 col-md-6">
+
+                <a
+                    href="available-products.html?category=spices"
+                    class="category-card category-card-wide"
+                >
+
+                    <div class="category-card-image">
+
+                        <img
+                            src="images/spices.jpg"
+                            alt="Fresh agricultural spices"
+                        >
+
+                        <span class="category-number">
+                            06
+                        </span>
+
+                    </div>
+
+
+                    <div class="category-card-content">
+
+                        <div>
+
+                            <small>
+                                FARM PRODUCE
+                            </small>
+
+                            <h3>
+                                Spices & Other Produce
+                            </h3>
+
+                        </div>
+
+                        <span class="category-arrow">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ======================================
+             BOTTOM MARKETPLACE CTA
+        ======================================= -->
+
+        <div class="category-bottom">
+
+            <div>
+
+                <span>
+                    READY TO SOURCE?
+                </span>
+
+                <h2>
+                    Find the produce your
+                    business needs.
+                </h2>
+
+            </div>
+
+
+            <a
+                href="available-products.html"
+                class="browse-all-btn"
+            >
+
+                View all available products
+
+                <i class="bi bi-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+  <!-- =========================================
+     MAIN FOOTER
+========================================= -->
+
+    <footer class="Agrolink-footer">
+
+        <div class="container">
+
+
+            <!-- TOP FOOTER -->
+
+            <div class="footer-top row gy-5">
+
+
+                <!-- BRAND -->
+
+                <div class="col-lg-4 col-md-6">
+
+                    <a href="index.html" class="footer-logo">
+
+                        <div class="footer-logo">
+                            <div class="logo-image">
+                                <img src="images/logo2.png" alt="AgroLink Logo">
+                            </div>
+                            
+                        </div>
+                    </a>
+
+
+                    <p class="footer-description">
+
+                        Connecting agricultural supply to dependable demand
+                        through collection, warehousing, inventory management,
+                        and a more efficient path to market.
+
+                    </p>
+
+
+                    <!-- SOCIALS -->
+
+                    <div class="footer-socials">
+
+                        <a href="https://facebook.com/agrolink">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+
+                        <a href="https://instagram.com/agrolink">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+
+                        <a href="https://linkedin.com/company/agrolink">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+
+                        <a href="https://twitter.com/agrolinkng">
+                            <i class="bi bi-twitter-x"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PLATFORM -->
+
+                <div class="col-lg-2 col-6">
+
+                    <div class="footer-links">
+
+                        <h5>
+                            Platform
+                        </h5>
+
+                        <a href="available-products.html">
+                            Available Products
+                        </a>
+
+                        <a href="product-categories.html">
+                            Product Categories
+                        </a>
+
+                        <a href="how-it-works.html">
+                            How It Works
+                        </a>
+
+                        <a href="contact.html">
+                            Warehouse Network
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FARMERS -->
+
+                <div class="col-lg-2 col-6">
+
+                    <div class="footer-links">
+
+                        <h5>
+                            For Farmers
+                        </h5>
+
+                        <a href="become-a-partner.html">
+                            Become a Partner
+                        </a>
+
+                        <a href="sell-with-AgroLink.html">
+                            Schedule Collection
+                        </a>
+
+                        <a href="farmer-login.html">
+                            Farmer Dashboard
+                        </a>
+
+                        <a href="contact.html">
+                            Farmer Support
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- BUYERS -->
+
+                <div class="col-lg-2 col-6">
+
+                    <div class="footer-links">
+
+                        <h5>
+                            For Buyers
+                        </h5>
+
+                        <a href="available-products.html">
+                            Browse Stock
+                        </a>
+
+                        <a href="wholesale.html">
+                            Wholesale Orders
+                        </a>
+
+                        <a href="buyer-login.html">
+                            Buyer Dashboard
+                        </a>
+
+                        <a href="contact.html">
+                            Track Delivery
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- COMPANY -->
+
+                <div class="col-lg-2 col-6">
+
+                    <div class="footer-links">
+
+                        <h5>
+                            Company
+                        </h5>
+
+                        <a href="about-us.html">
+                            About AgroLink
+                        </a>
+
+                        <a href="careers.html">
+                            Careers
+                        </a>
+
+                        <a href="contact.html">
+                            Contact Us
+                        </a>
+
+                        <a href="terms.html">
+                            Terms & Privacy
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- FOOTER CONTACT STRIP -->
+
+            <div class="footer-contact-strip row gy-4">
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="footer-contact-item">
+
+                        <div>
+                            <i class="bi bi-envelope"></i>
+                        </div>
+
+                        <span>
+                            hello@agrolink.ng
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="footer-contact-item">
+
+                        <div>
+                            <i class="bi bi-telephone"></i>
+                        </div>
+
+                        <span>
+                            +234 72 728 3572
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-4">
+
+                    <div class="footer-contact-item">
+
+                        <div>
+                            <i class="bi bi-geo-alt"></i>
+                        </div>
+
+                        <span>
+                            Nigeria
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- BOTTOM FOOTER -->
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 AgroLink. All rights reserved.
+                </p>
+
+
+                <div class="footer-bottom-links">
+
+                    <a href="privacy-policy.html">
+                        Privacy Policy
+                    </a>
+
+                    <a href="terms.html">
+                        Terms of Service
+                    </a>
+
+                    <a href="cookies.html">
+                        Cookies
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </footer>
+
+
+<script src="product-categories.js"></script>
+
+
+     <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js">
+    </script>
+</body>
+</html>

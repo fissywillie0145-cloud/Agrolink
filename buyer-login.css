@@ -1,0 +1,1041 @@
+/* =========================================================
+   AGROLINK
+   BUYER LOGIN PAGE
+   ========================================================= */
+
+
+/* =========================================================
+   PAGE
+   ========================================================= */
+
+.buyer-login-page {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    font-family: "Saira", sans-serif;
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   LEFT PANEL
+   ========================================================= */
+
+.buyer-login-left {
+    width: 50%;
+    min-height: 100vh;
+    padding: 55px 7%;
+    background: #064b35;
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    color: #ffffff;
+}
+
+
+/* Decorative circles */
+
+.buyer-login-left::before {
+    content: "";
+    position: absolute;
+
+    width: 520px;
+    height: 520px;
+
+    right: -290px;
+    bottom: -270px;
+
+    border: 1px solid rgba(105, 212, 66, 0.18);
+    border-radius: 50%;
+}
+
+
+.buyer-login-left::after {
+    content: "";
+    position: absolute;
+
+    width: 360px;
+    height: 360px;
+
+    right: -185px;
+    bottom: -180px;
+
+    border: 1px solid rgba(105, 212, 66, 0.13);
+    border-radius: 50%;
+}
+
+
+/* =========================================================
+   LOGO
+   ========================================================= */
+
+.buyer-login-logo {
+    width: fit-content;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    text-decoration: none;
+
+    position: relative;
+    z-index: 5;
+}
+
+
+/* Logo mark */
+
+.buyer-login-logo-mark {
+    width: 42px;
+    height: 42px;
+
+    position: relative;
+}
+
+
+/* Leaves */
+
+.buyer-login-logo-mark .leaf {
+    position: absolute;
+
+    width: 13px;
+    height: 22px;
+
+    border-radius: 100% 0 100% 0;
+
+    transform-origin: bottom center;
+}
+
+
+/* Left leaf = deep green */
+
+.buyer-login-logo-mark .leaf-one {
+    left: 3px;
+    top: 13px;
+
+    background: #08704e;
+
+    transform: rotate(-43deg);
+}
+
+
+/* Middle/top leaf */
+
+.buyer-login-logo-mark .leaf-two {
+    left: 15px;
+    top: 1px;
+
+    background: #69d442;
+
+    transform: rotate(0deg);
+}
+
+
+/* Right leaf = lime green */
+
+.buyer-login-logo-mark .leaf-three {
+    right: 2px;
+    top: 13px;
+
+    background: #69d442;
+
+    transform: rotate(43deg);
+}
+
+
+/* Logo text */
+
+.buyer-login-logo-text {
+    font-size: 25px;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: -0.7px;
+}
+
+
+
+.nav-logo img {
+    width: 190px;
+    height: auto;
+    display: block;
+    max-width: 139px;
+}
+
+.logo-image1 img{
+    width: 190px;
+    height: auto;
+    font-size: 30px;
+    font-weight: 800;
+
+}
+
+
+
+
+/* Agro must remain white */
+
+.buyer-login-logo-text .agro-text {
+    color: #ffffff;
+}
+
+
+/* Link deep green */
+
+.buyer-login-logo-text .link-text {
+    color: #08704e;
+}
+
+
+/* =========================================================
+   LEFT CONTENT
+   ========================================================= */
+
+.buyer-login-content {
+    width: 100%;
+    max-width: 610px;
+
+    position: relative;
+    z-index: 3;
+}
+
+
+.buyer-login-label {
+    margin: 0 0 22px;
+
+    color: #69d442;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+
+.buyer-login-title {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: clamp(48px, 5vw, 76px);
+
+    line-height: 0.98;
+
+    font-weight: 800;
+
+    letter-spacing: -2px;
+}
+
+
+.buyer-login-title span {
+    color: #69d442;
+}
+
+
+.buyer-login-description {
+    max-width: 570px;
+
+    margin: 28px 0 0;
+
+    color: rgba(255, 255, 255, 0.76);
+
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   NETWORK CARD
+   ========================================================= */
+
+.buyer-login-network {
+    width: 100%;
+
+    margin-top: 48px;
+
+    padding: 22px 20px;
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    border-radius: 15px;
+
+    background: rgba(255, 255, 255, 0.035);
+
+    backdrop-filter: blur(8px);
+
+    position: relative;
+    z-index: 3;
+}
+
+
+.buyer-login-network {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 13px;
+}
+
+
+.buyer-login-step {
+    display: flex;
+    align-items: center;
+
+    gap: 11px;
+
+    min-width: 0;
+}
+
+
+.buyer-login-step-number {
+    width: 37px;
+    height: 37px;
+
+    flex: 0 0 37px;
+
+    border-radius: 9px;
+
+    background: rgba(105, 212, 66, 0.13);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #69d442;
+
+    font-size: 10px;
+    font-weight: 700;
+}
+
+
+.buyer-login-step h4 {
+    margin: 0 0 2px;
+
+    color: #ffffff;
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+.buyer-login-step p {
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.48);
+
+    font-size: 10px;
+}
+
+
+.buyer-login-line {
+    width: 40px;
+    height: 1px;
+
+    flex: 0 0 40px;
+
+    background: rgba(105, 212, 66, 0.28);
+}
+
+.buyer-login-signup {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 5px;
+
+    margin-top: 20px;
+
+    color: #7d8983;
+
+    font-family: "Saira", sans-serif;
+    font-size: 12px;
+
+    text-align: center;
+}
+
+.buyer-login-signup a {
+    color: #08704e;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition: color 0.2s ease;
+}
+
+.buyer-login-signup a:hover {
+    color: #329957;
+}
+
+
+/* =========================================================
+   LEFT BOTTOM
+   ========================================================= */
+
+.buyer-login-bottom {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    position: relative;
+    z-index: 4;
+
+    color: rgba(255, 255, 255, 0.53);
+
+    font-size: 11px;
+}
+
+
+.bottom-dot {
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    background: #69d442;
+
+    flex: 0 0 7px;
+}
+
+
+/* =========================================================
+   RIGHT PANEL
+   ========================================================= */
+
+.buyer-login-right {
+    width: 50%;
+    min-height: 100vh;
+
+    padding: 50px 8%;
+
+    background: #f7f8f3;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.buyer-login-form-container {
+    width: 100%;
+    max-width: 520px;
+}
+
+
+/* =========================================================
+   RIGHT HEADING
+   ========================================================= */
+
+.buyer-login-welcome {
+    margin: 0 0 13px;
+
+    color: #08704e;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+
+.buyer-login-heading {
+    margin: 0;
+
+    color: #063f2e;
+
+    font-size: clamp(38px, 4vw, 57px);
+
+    line-height: 1.04;
+
+    font-weight: 800;
+
+    letter-spacing: -1.5px;
+}
+
+
+.buyer-login-heading span {
+    color: #329957;
+}
+
+
+.buyer-login-subtitle {
+    max-width: 470px;
+
+    margin: 17px 0 38px;
+
+    color: #75827b;
+
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   FORM
+   ========================================================= */
+
+.buyer-login-form {
+    width: 100%;
+}
+
+
+.buyer-login-field {
+    margin-bottom: 23px;
+}
+
+
+.buyer-login-field label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #073f2e;
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+/* Input */
+
+.buyer-login-input {
+    width: 100%;
+    height: 55px;
+
+    padding: 0 16px;
+
+    border: 1px solid #dce3df;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    background: #ffffff;
+
+    color: #173c30;
+
+    font-family: "Saira", sans-serif;
+
+    font-size: 13px;
+
+    transition: all 0.25s ease;
+}
+
+
+.buyer-login-input::placeholder {
+    color: #a2ada7;
+}
+
+
+.buyer-login-input:focus {
+    border-color: #329957;
+
+    box-shadow:
+        0 0 0 3px rgba(50, 153, 87, 0.08);
+}
+
+
+/* =========================================================
+   PASSWORD
+   ========================================================= */
+
+.buyer-login-password-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 8px;
+}
+
+
+.buyer-login-password-heading label {
+    margin: 0;
+}
+
+
+.buyer-login-forgot {
+    color: #08704e;
+
+    text-decoration: none;
+
+    font-size: 11px;
+    font-weight: 700;
+}
+
+
+.buyer-login-forgot:hover {
+    color: #329957;
+}
+
+
+.buyer-login-password-box {
+    position: relative;
+}
+
+
+.buyer-login-password-box .buyer-login-input {
+    padding-right: 65px;
+}
+
+
+.buyer-login-show {
+    position: absolute;
+
+    top: 50%;
+    right: 16px;
+
+    transform: translateY(-50%);
+
+    padding: 0;
+
+    border: none;
+
+    background: transparent;
+
+    color: #08704e;
+
+    font-family: "Saira", sans-serif;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   REMEMBER ME
+   ========================================================= */
+
+.buyer-login-remember {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    margin: 2px 0 24px;
+}
+
+
+.buyer-login-remember input {
+    width: 15px;
+    height: 15px;
+
+    margin: 0;
+
+    accent-color: #329957;
+
+    cursor: pointer;
+}
+
+
+.buyer-login-remember label {
+    margin: 0;
+
+    color: #7d8983;
+
+    font-size: 11px;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   LOGIN BUTTON
+   ========================================================= */
+
+.buyer-login-button {
+    width: 100%;
+    height: 56px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #064b35;
+
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    font-family: "Saira", sans-serif;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+}
+
+
+.buyer-login-button:hover {
+    background: #08704e;
+
+    transform: translateY(-1px);
+}
+
+
+.buyer-login-button i {
+    color: #69d442;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   DIVIDER
+   ========================================================= */
+
+.buyer-login-divider {
+    width: 100%;
+
+    margin: 32px 0 27px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+.buyer-login-divider span {
+    height: 1px;
+
+    flex: 1;
+
+    background: #dfe5e1;
+}
+
+
+.buyer-login-divider p {
+    margin: 0;
+
+    color: #9ba59f;
+
+    font-size: 9px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   SIGN UP
+   ========================================================= */
+
+.buyer-login-signup-text {
+    margin: 0 0 14px;
+
+    color: #87918c;
+
+    text-align: center;
+
+    font-size: 12px;
+}
+
+
+.buyer-login-options {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 11px;
+}
+
+
+.buyer-login-option {
+    min-height: 54px;
+
+    padding: 0 16px;
+
+    border: 1px solid #dce3df;
+
+    border-radius: 10px;
+
+    background: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: #073f2e;
+
+    text-decoration: none;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    transition: all 0.25s ease;
+}
+
+
+.buyer-login-option:hover {
+    border-color: #329957;
+
+    color: #08704e;
+
+    transform: translateY(-1px);
+}
+
+
+.buyer-login-option i {
+    color: #329957;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   SECURITY
+   ========================================================= */
+
+.buyer-login-security {
+    margin-top: 27px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+}
+
+
+.buyer-login-security-icon {
+    width: 21px;
+    height: 21px;
+
+    flex: 0 0 21px;
+
+    border-radius: 50%;
+
+    background: #dff2e7;
+
+    color: #329957;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 9px;
+}
+
+
+.buyer-login-security p {
+    max-width: 330px;
+
+    margin: 0;
+
+    color: #9aa49f;
+
+    font-size: 9px;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    .buyer-login-left {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .buyer-login-right {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .buyer-login-title {
+        font-size: 54px;
+    }
+
+    .buyer-login-heading {
+        font-size: 44px;
+    }
+
+    .buyer-login-network {
+        padding: 18px 15px;
+    }
+
+    .buyer-login-line {
+        width: 25px;
+        flex-basis: 25px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE / SMALL TABLET
+   ========================================================= */
+
+@media (max-width: 850px) {
+
+    .buyer-login-page {
+        display: block;
+
+        overflow: visible;
+    }
+
+
+    .buyer-login-left {
+        width: 100%;
+        min-height: auto;
+
+        padding: 45px 7% 50px;
+    }
+
+
+    .buyer-login-content {
+        margin-top: 75px;
+    }
+
+
+    .buyer-login-title {
+        font-size: 52px;
+    }
+
+
+    .buyer-login-bottom {
+        margin-top: 55px;
+    }
+
+
+    .buyer-login-right {
+        width: 100%;
+        min-height: auto;
+
+        padding: 65px 7%;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .buyer-login-left {
+        padding: 35px 24px 45px;
+    }
+
+
+    .buyer-login-right {
+        padding: 50px 24px;
+    }
+
+
+    .buyer-login-logo-text {
+        font-size: 23px;
+    }
+
+
+    .buyer-login-content {
+        margin-top: 65px;
+    }
+
+
+    .buyer-login-label {
+        font-size: 10px;
+
+        letter-spacing: 2.5px;
+    }
+
+
+    .buyer-login-title {
+        font-size: 43px;
+
+        letter-spacing: -1px;
+    }
+
+
+    .buyer-login-description {
+        font-size: 14px;
+    }
+
+
+    /* Stack the network items */
+
+    .buyer-login-network {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 15px;
+    }
+
+
+    .buyer-login-step {
+        width: 100%;
+    }
+
+
+    .buyer-login-line {
+        display: none;
+    }
+
+
+    .buyer-login-heading {
+        font-size: 37px;
+
+        letter-spacing: -1px;
+    }
+
+
+    .buyer-login-subtitle {
+        font-size: 13px;
+
+        margin-bottom: 32px;
+    }
+
+
+    .buyer-login-options {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .buyer-login-left {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+    .buyer-login-right {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+    .buyer-login-title {
+        font-size: 38px;
+    }
+
+
+    .buyer-login-heading {
+        font-size: 33px;
+    }
+
+}

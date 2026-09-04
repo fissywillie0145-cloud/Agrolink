@@ -1,0 +1,974 @@
+/* =========================================================
+   AGROLINK
+   BUYER SIGN UP PAGE
+   ========================================================= */
+
+
+/* =========================================================
+   MAIN PAGE
+   ========================================================= */
+
+.buyer-signup-page {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+
+    font-family: "Saira", sans-serif;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   LEFT PANEL
+   ========================================================= */
+
+.buyer-signup-left {
+    width: 50%;
+    min-height: 100vh;
+
+    padding: 50px 7%;
+
+    background: #064b35;
+
+    color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* Decorative circle */
+
+.buyer-signup-left::before {
+    content: "";
+
+    width: 520px;
+    height: 520px;
+
+    position: absolute;
+
+    right: -290px;
+    bottom: -275px;
+
+    border: 1px solid rgba(105, 212, 66, 0.18);
+
+    border-radius: 50%;
+}
+
+
+.buyer-signup-left::after {
+    content: "";
+
+    width: 360px;
+    height: 360px;
+
+    position: absolute;
+
+    right: -185px;
+    bottom: -180px;
+
+    border: 1px solid rgba(105, 212, 66, 0.13);
+
+    border-radius: 50%;
+}
+
+
+/* =========================================================
+   LOGO
+   ========================================================= */
+
+.buyer-signup-logo {
+    width: fit-content;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    text-decoration: none;
+
+    position: relative;
+    z-index: 5;
+}
+
+
+/* Logo mark */
+
+.buyer-signup-logo-mark {
+    width: 42px;
+    height: 42px;
+
+    position: relative;
+}
+
+
+/* Leaves */
+
+.buyer-signup-logo-mark .signup-leaf {
+    width: 13px;
+    height: 22px;
+
+    position: absolute;
+
+    border-radius: 100% 0 100% 0;
+
+    transform-origin: bottom center;
+}
+
+
+/* Left leaf */
+
+.signup-leaf-one {
+    left: 3px;
+    top: 13px;
+
+    background: #08704e;
+
+    transform: rotate(-43deg);
+}
+
+
+/* Top leaf */
+
+.signup-leaf-two {
+    left: 15px;
+    top: 1px;
+
+    background: #69d442;
+
+    transform: rotate(0deg);
+}
+
+
+/* Right leaf */
+
+.signup-leaf-three {
+    right: 2px;
+    top: 13px;
+
+    background: #69d442;
+
+    transform: rotate(43deg);
+}
+
+
+/* Logo text */
+
+.buyer-signup-logo-text {
+    font-size: 25px;
+
+    line-height: 1;
+
+    font-weight: 700;
+
+    letter-spacing: -0.7px;
+}
+
+
+/* Agro = white */
+
+.signup-agro {
+    color: #ffffff;
+}
+
+
+/* Link = deep green */
+
+.signup-link {
+    color: #08704e;
+}
+
+
+/* =========================================================
+   LEFT CONTENT
+   ========================================================= */
+
+.buyer-signup-content {
+    width: 100%;
+    max-width: 610px;
+
+    position: relative;
+    z-index: 3;
+}
+
+
+.buyer-signup-label {
+    margin: 0 0 20px;
+
+    color: #69d442;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+
+.buyer-signup-title {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: clamp(45px, 5vw, 72px);
+
+    line-height: 0.99;
+
+    font-weight: 800;
+
+    letter-spacing: -2px;
+}
+
+
+.buyer-signup-title span {
+    color: #69d442;
+}
+
+
+.buyer-signup-description {
+    max-width: 550px;
+
+    margin: 27px 0 0;
+
+    color: rgba(255, 255, 255, 0.76);
+
+    font-size: 15px;
+
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   NETWORK
+   ========================================================= */
+
+.buyer-signup-network {
+    width: 100%;
+
+    margin-top: 43px;
+
+    padding: 21px 20px;
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    border-radius: 15px;
+
+    background: rgba(255, 255, 255, 0.035);
+
+    backdrop-filter: blur(8px);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 12px;
+
+    position: relative;
+    z-index: 3;
+}
+
+
+.buyer-signup-step {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    min-width: 0;
+}
+
+
+.buyer-signup-number {
+    width: 37px;
+    height: 37px;
+
+    flex: 0 0 37px;
+
+    border-radius: 9px;
+
+    background: rgba(105, 212, 66, 0.13);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #69d442;
+
+    font-size: 10px;
+
+    font-weight: 700;
+}
+
+
+.buyer-signup-step h4 {
+    margin: 0 0 2px;
+
+    color: #ffffff;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+
+.buyer-signup-step p {
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.48);
+
+    font-size: 10px;
+}
+
+
+.buyer-signup-line {
+    width: 38px;
+    height: 1px;
+
+    flex: 0 0 38px;
+
+    background: rgba(105, 212, 66, 0.28);
+}
+
+
+/* =========================================================
+   LEFT BOTTOM
+   ========================================================= */
+
+.buyer-signup-bottom {
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    position: relative;
+    z-index: 4;
+
+    color: rgba(255, 255, 255, 0.53);
+
+    font-size: 11px;
+}
+
+
+.signup-bottom-dot {
+    width: 7px;
+    height: 7px;
+
+    flex: 0 0 7px;
+
+    border-radius: 50%;
+
+    background: #69d442;
+}
+
+
+/* =========================================================
+   RIGHT PANEL
+   ========================================================= */
+
+.buyer-signup-right {
+    width: 50%;
+    min-height: 100vh;
+
+    padding: 45px 8%;
+
+    background: #f7f8f3;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow-y: auto;
+}
+
+
+.buyer-signup-form-container {
+    width: 100%;
+    max-width: 570px;
+}
+
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.buyer-signup-welcome {
+    margin: 0 0 10px;
+
+    color: #08704e;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+
+.buyer-signup-heading {
+    margin: 0;
+
+    color: #063f2e;
+
+    font-size: clamp(37px, 4vw, 52px);
+
+    line-height: 1;
+
+    font-weight: 800;
+
+    letter-spacing: -1.5px;
+}
+
+
+.buyer-signup-heading span {
+    color: #329957;
+}
+
+
+.buyer-signup-subtitle {
+    max-width: 500px;
+
+    margin: 15px 0 28px;
+
+    color: #75827b;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   FORM
+   ========================================================= */
+
+.buyer-signup-form {
+    width: 100%;
+}
+
+
+/* Two-column row */
+
+.buyer-signup-row {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+}
+
+
+/* Field */
+
+.buyer-signup-field {
+    margin-bottom: 16px;
+}
+
+
+.buyer-signup-field label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #073f2e;
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+
+/* Input */
+
+.buyer-signup-input {
+    width: 100%;
+    height: 48px;
+
+    padding: 0 14px;
+
+    border: 1px solid #dce3df;
+
+    border-radius: 9px;
+
+    outline: none;
+
+    background: #ffffff;
+
+    color: #173c30;
+
+    font-family: "Saira", sans-serif;
+
+    font-size: 12px;
+
+    transition: all 0.25s ease;
+
+    box-sizing: border-box;
+}
+
+
+.buyer-signup-input::placeholder {
+    color: #a2ada7;
+}
+
+
+.buyer-signup-input:focus {
+    border-color: #329957;
+
+    box-shadow:
+        0 0 0 3px rgba(50, 153, 87, 0.08);
+}
+
+
+/* =========================================================
+   PASSWORD
+   ========================================================= */
+
+.buyer-signup-password-box {
+    position: relative;
+}
+
+
+.buyer-signup-password-box .buyer-signup-input {
+    padding-right: 60px;
+}
+
+
+.buyer-signup-show {
+    position: absolute;
+
+    top: 50%;
+    right: 14px;
+
+    transform: translateY(-50%);
+
+    padding: 0;
+
+    border: none;
+
+    background: transparent;
+
+    color: #08704e;
+
+    font-family: "Saira", sans-serif;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   TERMS
+   ========================================================= */
+
+.buyer-signup-terms {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 8px;
+
+    margin: 2px 0 20px;
+}
+
+
+.buyer-signup-terms input {
+    width: 14px;
+    height: 14px;
+
+    flex: 0 0 14px;
+
+    margin: 2px 0 0;
+
+    accent-color: #329957;
+
+    cursor: pointer;
+}
+
+
+.buyer-signup-terms label {
+    color: #7d8983;
+
+    font-size: 10px;
+
+    line-height: 1.5;
+
+    cursor: pointer;
+}
+
+
+.buyer-signup-terms a {
+    color: #08704e;
+
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+
+.buyer-signup-terms a:hover {
+    color: #329957;
+}
+
+
+/* =========================================================
+   CREATE ACCOUNT BUTTON
+   ========================================================= */
+
+.buyer-signup-button {
+    width: 100%;
+    height: 53px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #064b35;
+
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    font-family: "Saira", sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+}
+
+
+.buyer-signup-button:hover {
+    background: #08704e;
+
+    transform: translateY(-1px);
+}
+
+
+.buyer-signup-button i {
+    color: #69d442;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   LOGIN LINK
+   ========================================================= */
+
+.buyer-signup-login-text {
+    margin: 23px 0 9px;
+
+    color: #8a948f;
+
+    text-align: center;
+
+    font-size: 11px;
+}
+
+
+.buyer-signup-login-link {
+    width: 100%;
+    min-height: 47px;
+
+    padding: 0 15px;
+
+    border: 1px solid #dce3df;
+
+    border-radius: 9px;
+
+    background: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: #073f2e;
+
+    text-decoration: none;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    transition: all 0.25s ease;
+}
+
+
+.buyer-signup-login-link:hover {
+    border-color: #329957;
+
+    color: #08704e;
+
+    transform: translateY(-1px);
+}
+
+
+.buyer-signup-login-link i {
+    color: #329957;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   SECURITY
+   ========================================================= */
+
+.buyer-signup-security {
+    margin-top: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+}
+
+
+.buyer-signup-security-icon {
+    width: 20px;
+    height: 20px;
+
+    flex: 0 0 20px;
+
+    border-radius: 50%;
+
+    background: #dff2e7;
+
+    color: #329957;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 8px;
+}
+
+
+.buyer-signup-security p {
+    max-width: 330px;
+
+    margin: 0;
+
+    color: #9aa49f;
+
+    font-size: 8px;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    .buyer-signup-left {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+
+    .buyer-signup-right {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+
+    .buyer-signup-title {
+        font-size: 53px;
+    }
+
+
+    .buyer-signup-heading {
+        font-size: 43px;
+    }
+
+
+    .buyer-signup-network {
+        padding: 18px 15px;
+    }
+
+
+    .buyer-signup-line {
+        width: 22px;
+
+        flex-basis: 22px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET / MOBILE
+   ========================================================= */
+
+@media (max-width: 850px) {
+
+    .buyer-signup-page {
+        display: block;
+
+        overflow: visible;
+    }
+
+
+    .buyer-signup-left {
+        width: 100%;
+        min-height: auto;
+
+        padding: 43px 7% 48px;
+    }
+
+
+    .buyer-signup-content {
+        margin-top: 70px;
+    }
+
+
+    .buyer-signup-title {
+        font-size: 51px;
+    }
+
+
+    .buyer-signup-bottom {
+        margin-top: 50px;
+    }
+
+
+    .buyer-signup-right {
+        width: 100%;
+        min-height: auto;
+
+        padding: 60px 7%;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .buyer-signup-left {
+        padding: 35px 24px 42px;
+    }
+
+
+    .buyer-signup-right {
+        padding: 48px 24px;
+    }
+
+
+    .buyer-signup-content {
+        margin-top: 62px;
+    }
+
+
+    .buyer-signup-label {
+        font-size: 9px;
+
+        letter-spacing: 2.3px;
+    }
+
+
+    .buyer-signup-title {
+        font-size: 42px;
+
+        letter-spacing: -1px;
+    }
+
+
+    .buyer-signup-description {
+        font-size: 13px;
+    }
+
+
+    /* Stack network */
+
+    .buyer-signup-network {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 14px;
+    }
+
+
+    .buyer-signup-line {
+        display: none;
+    }
+
+
+    /* Form rows become one column */
+
+    .buyer-signup-row {
+        grid-template-columns: 1fr;
+
+        gap: 0;
+    }
+
+
+    .buyer-signup-heading {
+        font-size: 36px;
+
+        letter-spacing: -1px;
+    }
+
+
+    .buyer-signup-subtitle {
+        font-size: 12px;
+
+        margin-bottom: 25px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .buyer-signup-left {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+    .buyer-signup-right {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+    .buyer-signup-title {
+        font-size: 37px;
+    }
+
+
+    .buyer-signup-heading {
+        font-size: 32px;
+    }
+
+}

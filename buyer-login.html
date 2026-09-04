@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buyer-login</title>
+
+
+    <!-- Saira Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Bootstrap 5.0.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Saira:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="buyer-login.css">
+</head>
+
+<body>
+
+
+    <section class="buyer-login-page">
+
+        <!-- =====================================================
+         LEFT SIDE
+         ===================================================== -->
+        <div class="buyer-login-left">
+
+            <!-- Logo -->
+            <a href="index.html" class="buyer-login-logo">
+                <div class="nav-logo">
+                    <div class="logo-image1">
+                        <img src="images/logo2.png" alt="AgroLink Logo">
+                    </div>
+                </div>
+
+
+            </a>
+
+
+            <!-- Main Left Content -->
+            <div class="buyer-login-content">
+
+                <p class="buyer-login-label">
+                    AGROLINK NETWORK
+                </p>
+
+                <h1 class="buyer-login-title">
+                    From the <span>farm.</span><br>
+                    To the <span>market.</span>
+                </h1>
+
+                <p class="buyer-login-description">
+                    One connected network for farmers, agricultural
+                    produce and wholesale buyers.
+                </p>
+
+
+                <!-- Network Steps -->
+                <div class="buyer-login-network">
+
+                    <div class="buyer-login-step">
+
+                        <div class="buyer-login-step-number">
+                            01
+                        </div>
+
+                        <div>
+                            <h4>Farmers</h4>
+                            <p>Supply produce</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="buyer-login-line"></div>
+
+
+                    <div class="buyer-login-step">
+
+                        <div class="buyer-login-step-number">
+                            02
+                        </div>
+
+                        <div>
+                            <h4>AgroLink</h4>
+                            <p>Manage supply</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="buyer-login-line"></div>
+
+
+                    <div class="buyer-login-step">
+
+                        <div class="buyer-login-step-number">
+                            03
+                        </div>
+
+                        <div>
+                            <h4>Buyers</h4>
+                            <p>Access wholesale produce</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Bottom Text -->
+            <div class="buyer-login-bottom">
+
+                <span class="bottom-dot"></span>
+
+                <span>
+                    Building a stronger agricultural supply network
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================================================
+         RIGHT SIDE
+         ===================================================== -->
+        <div class="buyer-login-right">
+
+            <div class="buyer-login-form-container">
+
+                <!-- Heading -->
+                <div class="buyer-login-heading-area">
+
+                    <p class="buyer-login-welcome">
+                        WELCOME BACK
+                    </p>
+
+                    <h2 class="buyer-login-heading">
+                        Sign in to <span>AgroLink.</span>
+                    </h2>
+
+                    <p class="buyer-login-subtitle">
+                        Access your AgroLink buyer account and continue
+                        purchasing reliable agricultural produce.
+                    </p>
+
+                </div>
+
+
+                <!-- Login Form -->
+                <form class="buyer-login-form" id="buyerLoginForm">
+
+                    <!-- Email -->
+                    <div class="buyer-login-field">
+
+                        <label for="buyerEmail">
+                            Email address
+                        </label>
+
+                        <input type="email" id="buyerEmail" class="buyer-login-input"
+                            placeholder="Enter your email address" autocomplete="email" required>
+
+                    </div>
+
+
+                    <!-- Password -->
+                    <div class="buyer-login-field">
+
+                        <div class="buyer-login-password-heading">
+
+                            <label for="buyerPassword">
+                                Password
+                            </label>
+
+                            <a href="#" class="buyer-login-forgot" id="forgotPassword">
+                                Forgot password?
+                            </a>
+
+                        </div>
+
+
+                        <div class="buyer-login-password-box">
+
+                            <input type="password" id="buyerPassword" class="buyer-login-input"
+                                placeholder="Enter your password" autocomplete="current-password" required>
+
+                            <button type="button" class="buyer-login-show" id="showPassword">
+                                Show
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Remember -->
+                    <div class="buyer-login-remember">
+
+                        <input type="checkbox" id="rememberBuyer">
+
+                        <label for="rememberBuyer">
+                            Remember me
+                        </label>
+
+                    </div>
+
+
+                    <!-- Login Button -->
+                    <button type="submit" class="buyer-login-button">
+                        <span>Sign in</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </form>
+
+
+                <!-- Divider -->
+                <div class="buyer-login-divider">
+
+                    <span></span>
+
+                    <p>OR</p>
+
+                    <span></span>
+
+                </div>
+
+
+                <!-- Sign Up -->
+               
+
+                <div class="buyer-login-signup">
+                    <span>Don't have an account?</span>
+
+                    <a href="buyer-signup.html">
+                        Sign up
+                    </a>
+                </div>
+
+
+                <div class="buyer-login-options">
+
+                    <a href="buyer-signup.html" class="buyer-login-option">
+                        <span>Wholesale Buyer</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="login.html" class="buyer-login-option">
+                        <span>Farmer</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+
+                <!-- Security -->
+                <div class="buyer-login-security">
+
+                    <div class="buyer-login-security-icon">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+
+                    <p>
+                        Your account information is protected and securely
+                        handled by AgroLink.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+     LOGIN JAVASCRIPT
+     ===================================================== -->
+
+    <script>
+
+        const loginForm = document.getElementById("buyerLoginForm");
+        const passwordInput = document.getElementById("buyerPassword");
+        const showPassword = document.getElementById("showPassword");
+
+
+        /* Show / Hide Password */
+        showPassword.addEventListener("click", function () {
+
+            if (passwordInput.type === "password") {
+
+                passwordInput.type = "text";
+                showPassword.textContent = "Hide";
+
+            } else {
+
+                passwordInput.type = "password";
+                showPassword.textContent = "Show";
+
+            }
+
+        });
+
+
+        /* Prevent the browser from sending the form to a server */
+        loginForm.addEventListener("submit", function (event) {
+
+            event.preventDefault();
+
+            const email = document.getElementById("buyerEmail").value.trim();
+            const password = passwordInput.value.trim();
+
+            if (!email || !password) {
+                return;
+            }
+
+            /*
+                For your current frontend project, send the buyer
+                to the buyer dashboard.
+    
+                Later, when you connect a real backend/database,
+                authentication can be added here.
+            */
+
+            window.location.href = "buyer-dashboard.html";
+
+        });
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
