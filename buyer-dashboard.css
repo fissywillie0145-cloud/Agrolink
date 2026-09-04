@@ -1114,7 +1114,10 @@ body {
 
 
 .warehouse-image {
-    min-height: 130px;
+    max-height: 130px;
+    width: 40%;
+    max-width: 40%;
+    height: auto;
 }
 
 .warehouse-placeholder {
